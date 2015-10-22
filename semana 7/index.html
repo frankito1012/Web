@@ -1,0 +1,124 @@
+<!--Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title> Frank R </title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+<!--web-fonts-->
+<link href='http://fonts.googleapis.com/css?family=Exo:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic' rel='stylesheet' type='text/css'>
+<!--js-->
+<script src="js/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }>
+</script>
+<meta name="keywords" content="Sea Foods Responsive web template, Bootstrap Web Templates, Flat Web Templates, AndriodCompatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+	</script>
+<!-- //end-smoth-scrolling -->
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+<script type="text/javascript">
+$(function () {
+	
+	var filterList = {
+	
+		init: function () {
+		
+			// MixItUp plugin
+			// http://mixitup.io
+			$('#portfoliolist').mixitup({
+				targetSelector: '.portfolio',
+				filterSelector: '.filter',
+				effects: ['fade'],
+				easing: 'snap',
+				// call the hover effect
+				onMixEnd: filterList.hoverEffect()
+			});				
+		
+		},
+		
+		hoverEffect: function () {
+		
+			// Simple parallax effect
+			$('#portfoliolist .portfolio').hover(
+				function () {
+					$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+					$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+				},
+				function () {
+					$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+					$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+				}		
+			);				
+		
+		}
+
+	};
+	
+	// Run the show!
+	filterList.init();
+	
+	
+});	
+</script>
+</head>
+<body>
+<!--banner start here-->
+<div class="banner">
+	<div class="header-main">
+	  <div class="container">
+	        <div class="header-navg">
+	        	<span class="menu"> <img src="images/icon.png" alt=""/></span>
+				<ul class="res">
+					<li><a class="active" href="index.html"> About </a></li>
+					<li><a href="about.html"> How to </a></li>
+					<li><a href="recipies.html"> Models </a></li>
+					<li><a href="news.html"> Contact </a></li>
+					
+				</ul>
+				 <script>
+                                  $( "span.menu").click(function() {
+                                                                    $(  "ul.res" ).slideToggle("slow", function() {
+                                                                     // Animation complete.
+                                                                     });
+                                                                     });
+                 </script>
+			</div>
+			<div class="search">
+				<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"/>
+				<input type="submit" value="">
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+		<div class="logo">
+			<a href="index.html"><img src="images/logo.png" alt=""/></a>
+		</div>
+			
+<!--banner end here-->
+<!--see grid star here-->
+
+<!--see grid  end here-->
+<!--see  gallery start here-->
+
+</div>
+
+	</div>
+<!--footer end here-->
+</body>
+</html>
